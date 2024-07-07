@@ -1,0 +1,29 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+#app {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#noteList li {
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#noteForm {
+  margin-top: 20px;
+}
+
+#noteForm input, #noteForm textarea {
+  width: 100%;
+  margin: 10px 0;
+}

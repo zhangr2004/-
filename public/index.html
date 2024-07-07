@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>备忘录应用</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="app">
+    <h1>备忘录应用</h1>
+    <input type="text" id="search" placeholder="搜索备忘录">
+    <button onclick="showNoteForm()">新建备忘录</button>
+    <ul id="noteList"></ul>
+  </div>
+
+  <div id="noteForm" style="display: none;">
+    <h2>新建/编辑备忘录</h2>
+    <input type="hidden" id="noteId">
+    <input type="text" id="noteTitle" placeholder="标题">
+    <textarea id="noteContent" placeholder="内容"></textarea>
+    <button onclick="saveNote()">保存</button>
+    <button onclick="hideNoteForm()">取消</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
